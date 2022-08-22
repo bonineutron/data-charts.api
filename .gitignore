@@ -1,0 +1,12 @@
+# node
+node_modules
+
+# build
+build
+
+# environment variables
+.env
+
+# local
+.vscode
+.prettierrc
