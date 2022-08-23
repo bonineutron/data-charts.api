@@ -14,7 +14,7 @@ const corsOptions = {
 // settings
 app.use(helmet());
 app.set('pkg', pkg);
-app.set('port', 3001);
+app.set('port', process.env.PORT || 3001);
 app.use(morgan('dev'));
 app.use(express.json());
 app.set('json spaces', 2);
