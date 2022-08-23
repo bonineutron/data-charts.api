@@ -1,3 +1,4 @@
+import tablesRoutes from './routes/tables.routes';
 import pkg from '../package.json';
 import express from 'express';
 import helmet from 'helmet';
@@ -32,5 +33,6 @@ app.get('/', (req, res) => {
 });
 
 // routes
+app.use('/api/tables', tablesRoutes);
 
 export default app;
