@@ -8,6 +8,6 @@ router.use((req, res, next) => {
   next();
 });
 
-router.get('/', tablesMysqlControllers.selectAllTables);
+router.post('/', tablesMysqlControllers.selectAllTables);
 
 export default router;
